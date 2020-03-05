@@ -3,6 +3,8 @@ export PATH=/Users/powers/.cargo/bin:/usr/local/anaconda3/bin:/usr/local/bin:/us
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
 
+export EDITOR=amp
+
 # Get on the uvm super computer
 alias vacc='ssh jpowers4@bluemoon-user1.uvm.edu'
 
