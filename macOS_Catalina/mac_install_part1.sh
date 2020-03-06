@@ -57,6 +57,10 @@ brew install nasm
 # EXERCISM
 brew install exercism
 
+#OPENGL GLFW GLEW
+brew install glfw
+brew install glew
+
 # ARRAYFIRE
 brew cask install arrayfire
 
