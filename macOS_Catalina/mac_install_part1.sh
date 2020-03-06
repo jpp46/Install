@@ -37,7 +37,7 @@ brew cask install sublime-text
 # Rust Enhanced, rustFmt, Julia Enhanced, Magic Python, Elm syntax and Format, Clang Format
 
 # CLANG FORMAT
-brew install clang-format
+brew install --build-from-source clang-format
 
 # ANACONDA PYTHON
 brew cask install anaconda
@@ -46,20 +46,20 @@ brew cask install anaconda
 brew cask install julia
 
 # ELM
-brew install elm
-brew install elm-format
-brew install node
+brew install --build-from-source elm
+brew install --build-from-source elm-format
+brew install --build-from-source node
 npm install uglify-js --global
 
 # NASM
-brew install nasm
+brew install --build-from-source nasm
 
 # EXERCISM
 brew install exercism
 
 #OPENGL GLFW GLEW
-brew install glfw
-brew install glew
+brew install --build-from-source glfw
+brew install --build-from-source glew
 
 # ARRAYFIRE
 brew cask install arrayfire
@@ -68,22 +68,22 @@ brew cask install arrayfire
 brew cask install xquartz
 
 # QEMU
-brew install qemu
+brew install --build-from-source qemu
 
 # WGET
-brew install wget
+brew install --build-from-source wget
 
 # FFMPEG
-brew install ffmpeg
+brew install --build-from-source ffmpeg
 
 # YOUTUBE-DL
-brew install youtube-dl
+brew install --build-from-source youtube-dl
 
 # PARI/GP
-brew install pari
+brew install --build-from-source pari
 
 # TMUX
-brew install tmux
+brew install --build-from-source tmux
 
 # ALACRITTY
 brew cask install alacritty
