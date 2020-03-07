@@ -46,9 +46,9 @@ brew cask install anaconda
 brew cask install julia
 
 # ELM
-brew install --build-from-source elm
-brew install --build-from-source elm-format
-brew install --build-from-source node
+brew install elm
+brew install elm-format
+brew install node
 npm install uglify-js --global
 
 # NASM

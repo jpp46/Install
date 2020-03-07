@@ -13,6 +13,9 @@ mkdir $HOME/.config/alacritty
 cd $HOME/Install/macOS_Catalina
 cp alacritty.yml $HOME/.config/alacritty
 
+# JULIA PACKAGES
+julia $HOME/Install/macOS_Catalina/install_script.jl
+
 # PYROSIM
 mkdir $HOME/.source-build
 cd $HOME/.source-build
