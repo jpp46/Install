@@ -25,6 +25,9 @@ brew cask install screenflow
 # STEAM
 brew cask install steam
 
+# BATTLE.NET
+brew cask install battle-net
+
 # F.LUX
 brew cask install flux
 
