@@ -1,5 +1,5 @@
 #PATH VARIABLES
-export PATH=/usr/local/GNAT/2019/bin:/Users/powers/.cargo/bin:/usr/local/anaconda3/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/Users/powers/opt/GNAT/2019/bin:/Users/powers/.cargo/bin:/usr/local/anaconda3/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
 
