@@ -22,6 +22,9 @@ brew cask install discord
 # SCREEN FLOW
 brew cask install screenflow
 
+# OPEN BROADCAST SOFTEWARE
+brew cask install obs
+
 # STEAM
 brew cask install steam
 
