@@ -13,6 +13,9 @@ brew doctor
 # FIREFOX
 brew cask install firefox
 
+# DROPBOX
+brew cask install dropbox
+
 # SLACK
 brew cask install slack
 
