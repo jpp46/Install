@@ -60,9 +60,6 @@ brew install elm-format
 brew install node
 npm install uglify-js --global
 
-# NASM
-brew install --build-from-source nasm
-
 # EXERCISM
 brew install exercism
 
