@@ -7,8 +7,10 @@ function! PackInit() abort
     " Additional plugins here.
     call minpac#add('vim-jp/syntax-vim-ex')
     call minpac#add('tyru/open-browser.vim')
-    " call minpac#add('zxqfl/tabnine-vim')
+    call minpac#add('Yggdroot/indentLine')
     call minpac#add('preservim/nerdtree')
+    call minpac#add('altercation/vim-colors-solarized')
+    " call minpac#add('zxqfl/tabnine-vim')
     
 endfunction
 
@@ -41,7 +43,8 @@ packloadall
 set termguicolors               " enable true colors support
 set nocompatible
 syntax on
-colorscheme sceaduhelm
+set background=dark
+colorscheme solarized
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -52,6 +55,8 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <C-n> :NERDTreeToggle<CR>
+
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " General
 set number                      " Show line numbers
