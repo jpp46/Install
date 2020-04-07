@@ -28,17 +28,14 @@ brew cask install screenflow
 # OPEN BROADCAST SOFTEWARE
 brew cask install obs
 
-# STEAM
-brew cask install steam
-
-# BATTLE.NET
-brew cask install battle-net
-
 # F.LUX
 brew cask install flux
 
 # BALENA ETCHER
 brew cask install balenaetcher
+
+# KITTY TERMINAL
+brew cask install kitty
 
 # SUBLIME
 brew cask install sublime-text
@@ -88,12 +85,6 @@ brew install --build-from-source youtube-dl
 # PARI/GP
 brew install --build-from-source pari
 
-# TMUX
-brew install --build-from-source tmux
-
-# ALACRITTY
-brew cask install alacritty
-
 # CLEANUP
 brew update
 brew doctor
@@ -103,10 +94,6 @@ brew cleanup
 cd $HOME
 sudo rm -rf .*
 mkdir .source-build
-
-# RUST
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rm $HOME/.profile
 
 # FINAL PROFILE
 cd Install/macOS_Catalina

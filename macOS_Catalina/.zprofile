@@ -1,24 +1,20 @@
 #PATH VARIABLES
-export PATH=/Users/powers/opt/GNAT/2019/bin:/Users/powers/.cargo/bin:/usr/local/anaconda3/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/Users/powers/GNAT/bin:/Users/powers/.cargo/bin:/usr/local/anaconda3/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
 
-export EDITOR=amp
+export EDITOR=vim
 
 # Get on the uvm super computer
 alias vacc='ssh jpowers4@bluemoon-user1.uvm.edu'
 
 proj() {
-  cd /Users/powers/Documents/Joshua/Github/$1
+  cd /Users/powers/Dropbox/Joshua/Github/$1
 }
 
 ml() {
-  cd /Users/powers/Documents/Joshua/Learning/Udemy/MLCourse
+  cd /Users/powers/Dropbox/Joshua/Learning/Udemy/MLCourse
   jupyter-notebook
-}
-
-submit() {
-  exercism submit $1
 }
 
 # Push to github with commit message

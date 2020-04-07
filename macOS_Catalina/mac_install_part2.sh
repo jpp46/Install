@@ -1,17 +1,12 @@
 #!/bin/sh
-# AMP
-cargo install amp
-cd $HOME/Install/macOS_Catalina
-cp *.sublime-syntax /Users/powers/Library/Application\ Support/amp/syntaxes
-cd /Users/powers/Library/Application\ Support/amp/syntaxes
-wget https://raw.githubusercontent.com/sublimehq/Packages/master/Rust/Cargo.sublime-syntax
-wget https://raw.githubusercontent.com/evancz/elm-syntax-highlighting/master/src/elm.sublime-syntax
 
-# ALACRITTY CONFIG
-mkdir $HOME/.config
-mkdir $HOME/.config/alacritty
-cd $HOME/Install/macOS_Catalina
-cp alacritty.yml $HOME/.config/alacritty
+#SET UP VIM
+git clone https://github.com/k-takata/minpac.git \
+    ~/.vim/pack/minpac/opt/minpac
+mkdir $HOME/.vim/colors
+cp $HOME/Install/macOS_Catalina/.vimrc $HOME
+cp $HOME/Install/macOS_Catalina/colors/* $HOME/.vim/colors/
+
 
 # JULIA PACKAGES
 julia $HOME/Install/macOS_Catalina/install_script.jl
