@@ -1,13 +1,5 @@
 #!/bin/sh
 
-#SET UP VIM
-git clone https://github.com/k-takata/minpac.git \
-    ~/.vim/pack/minpac/opt/minpac
-mkdir $HOME/.vim/colors
-cp $HOME/Install/macOS_Catalina/.vimrc $HOME
-cp $HOME/Install/macOS_Catalina/colors/* $HOME/.vim/colors/
-
-
 # JULIA PACKAGES
 julia $HOME/Install/macOS_Catalina/install_script.jl
 
