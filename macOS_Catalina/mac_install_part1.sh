@@ -10,6 +10,10 @@ sudo rm -rf $HOME/.*
 brew update
 brew doctor
 
+# FIRA CODE FONTS
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+
 # FIREFOX
 brew cask install firefox
 
@@ -28,14 +32,8 @@ brew cask install screenflow
 # OPEN BROADCAST SOFTEWARE
 brew cask install obs
 
-# F.LUX
-brew cask install flux
-
 # BALENA ETCHER
 brew cask install balenaetcher
-
-# KITTY TERMINAL
-brew cask install kitty
 
 # SUBLIME
 brew cask install sublime-text
@@ -89,6 +87,7 @@ brew install --build-from-source pari
 brew update
 brew doctor
 brew cleanup
+brew upgrade
 
 # CLEAN HOME DIR
 cd $HOME
