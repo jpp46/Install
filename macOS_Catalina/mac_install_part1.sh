@@ -20,6 +20,14 @@ brew cask install firefox
 # DROPBOX
 brew cask install dropbox
 
+# SUBLIME
+brew cask install sublime-text
+# After install packages:
+# Rust Enhanced, rustFmt, Julia Enhanced, Elm syntax and Format, Clang Format
+
+# CLANG FORMAT
+brew install --build-from-source clang-format
+
 # SLACK
 brew cask install slack
 
@@ -32,16 +40,14 @@ brew cask install screenflow
 # OPEN BROADCAST SOFTEWARE
 brew cask install obs
 
+# Make MKV
+brew cask install makemkv
+
+# VLC
+brew cask install vlc
+
 # BALENA ETCHER
 brew cask install balenaetcher
-
-# SUBLIME
-brew cask install sublime-text
-# After install packages:
-# Rust Enhanced, rustFmt, Julia Enhanced, Magic Python, Elm syntax and Format, Clang Format
-
-# CLANG FORMAT
-brew install --build-from-source clang-format
 
 # ANACONDA PYTHON
 brew cask install anaconda

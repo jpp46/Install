@@ -47,7 +47,7 @@ ssh-copy-id jpowers4@bluemoon-user1.uvm.edu
 # GITHUB SETUP
 git config --global user.name jpp46
 git config --global user.email jpowers4@uvm.edu
-git config --global core.editor amp
+git config --global core.editor subl
 git config --global credential.helper store
 
 rm -rf Install
