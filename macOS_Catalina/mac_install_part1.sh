@@ -23,7 +23,7 @@ brew cask install dropbox
 # SUBLIME
 brew cask install sublime-text
 # After install packages:
-# Rust Enhanced, rustFmt, Julia Enhanced, Elm syntax and Format, Clang Format
+# Rust Enhanced, rustFmt, Julia Enhanced, Elm syntax and Format, Clang Format, Ayu, TabNine
 
 # CLANG FORMAT
 brew install --build-from-source clang-format
