@@ -5,8 +5,8 @@ ENV["PYTHON"]="/usr/local/anaconda3/bin/python"
 ENV["JUPYTER"]="/usr/local/anaconda3/bin/jupyter"
 
 package_list = [
-	"PyCall", "IJulia", "Mux", "WebIO", "Interact", "Flux", "MacroTools", "Calculus", "StatsBase", "HypothesisTests",
-	"BlackBoxOptim", "BlackBoxOptimizationBenchmarking", "ProgressMeter", "DataStructures", "BSON", "ArrayFire",
+	"PyCall", "IJulia", "Mux", "WebIO", "Interact", "Flux", "Zygote", "MacroTools", "Calculus", "StatsBase", "HypothesisTests",
+	"BlackBoxOptim", "BlackBoxOptimizationBenchmarking", "ProgressMeter", "DataStructures", "BSON", "ArrayFire", "Distributions",
 	"PackageCompiler", "AbstractPlotting", "GDAL", "MakieGallery", "RDatasets", "Makie", "Images", "ImageTransformations", "FileIO", "Colors", "GeometryTypes",
 	"LinearAlgebra", "DataFrames", "CSV", "Plots", "ORCA", "PlotlyJS", "PyPlot", "GraphRecipes", "StatsPlots", "LightGraphs",
 	"Cxx", "Libdl"
