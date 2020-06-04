@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# ANACONDA PYTHON
+brew cask install anaconda
+
 # JULIA PACKAGES
 julia $HOME/Install/macOS_Catalina/install_script.jl
 

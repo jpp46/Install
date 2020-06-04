@@ -46,12 +46,6 @@ brew cask install makemkv
 # VLC
 brew cask install vlc
 
-# BALENA ETCHER
-brew cask install balenaetcher
-
-# ANACONDA PYTHON
-brew cask install anaconda
-
 # JULIA
 brew cask install julia
 
@@ -60,9 +54,6 @@ brew install elm
 brew install elm-format
 brew install node
 npm install uglify-js --global
-
-# EXERCISM
-brew install exercism
 
 #OPENGL GLFW GLEW
 brew install --build-from-source glfw

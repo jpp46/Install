@@ -1,7 +1,7 @@
 #PATH VARIABLES
 export PATH=/usr/local/anaconda3/bin:/usr/local/sbin:$PATH
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/arrayfire/lib:$LD_LIBRARY_PATH
 
 export EDITOR=subl
 
