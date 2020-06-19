@@ -35,14 +35,6 @@ chmod +x optimize.sh
 shc -f optimize.sh -o elm-make
 mv elm-make /usr/local/bin
 
-# CONFIGURE EXERCISM
-exercism configure --token=c74dba39-40ac-4b31-bf6d-547783acc647
-
-# INSTALL JULIA PACKAGES
-cd $HOME/Install/macOS_Catalina
-julia install_script.jl
-cd $HOME
-
 # SUPER COMPUTER ACCESS
 ssh-keygen
 ssh-copy-id jpowers4@bluemoon-user1.uvm.edu
@@ -57,7 +49,7 @@ rm -rf Install
 
 # EXTRA INFO
   # SLACK HANDLES
-    # mecl-uvm elmlang rust-lang julialang cpplang wesbos data-lab-20
+    # mecl-uvm elmlang rust-lang julialang cpplang wesbos
 
   # DISCORD HANDLES
     # rustsim handmade.network

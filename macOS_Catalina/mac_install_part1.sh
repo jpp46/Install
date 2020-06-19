@@ -56,6 +56,7 @@ brew install node
 npm install uglify-js --global
 
 #OPENGL GLFW GLEW
+brew install --build-from-source llvm
 brew install --build-from-source glfw
 brew install --build-from-source glew
 
@@ -82,9 +83,14 @@ brew install --build-from-source pari
 
 # CLEANUP
 brew update
+brew upgrade
 brew doctor
 brew cleanup
+brew update
 brew upgrade
+brew doctor
+brew cleanup
+
 
 # CLEAN HOME DIR
 cd $HOME
