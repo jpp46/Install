@@ -21,23 +21,9 @@ cd coco
 python do.py run-python
 python do.py install-postprocessing
 
-# SHC SHELL SCRIPT COMPILER
-cd $HOME/.source-build
-git clone https://github.com/neurobin/shc.git
-cd shc
-./configure && make && make install
-
-# ELM OPTIMIZE SCRIPT to BIN
-cd $HOME/Install/macOS_Catalina
-cp optimize.sh $HOME/.source-build
-cd $HOME/.source-build
-chmod +x optimize.sh
-shc -f optimize.sh -o elm-make
-mv elm-make /usr/local/bin
-
 # SUPER COMPUTER ACCESS
 ssh-keygen
-ssh-copy-id jpowers4@bluemoon-user1.uvm.edu
+ssh-copy-id jpowers4@vacc-user1.uvm.edu
 
 # GITHUB SETUP
 git config --global user.name jpp46
@@ -55,4 +41,4 @@ rm -rf Install
     # rustsim handmade.network
 
   # APPS TO INSTALL
-    # Pages Keynote Numbers
+    # Pages Keynote Numbers SnippetsLab OmniPlayerPro

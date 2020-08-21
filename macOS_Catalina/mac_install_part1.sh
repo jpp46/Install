@@ -14,19 +14,13 @@ brew doctor
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 
-# FIREFOX
-brew cask install firefox
-
-# DROPBOX
-brew cask install dropbox
-
 # SUBLIME
 brew cask install sublime-text
 # After install packages:
 # Rust Enhanced, rustFmt, Julia Enhanced, Elm syntax and Format, Clang Format, Ayu, TabNine
 
 # CLANG FORMAT
-brew install --build-from-source clang-format
+brew install clang-format
 
 # SLACK
 brew cask install slack
@@ -43,11 +37,11 @@ brew cask install obs
 # Make MKV
 brew cask install makemkv
 
-# VLC
-brew cask install vlc
-
 # JULIA
 brew cask install julia
+
+# FORTH
+brew install gforth
 
 # ELM
 brew install elm
@@ -55,31 +49,20 @@ brew install elm-format
 brew install node
 npm install uglify-js --global
 
-#OPENGL GLFW GLEW
-brew install --build-from-source llvm
-brew install --build-from-source glfw
-brew install --build-from-source glew
-
 # ARRAYFIRE
 brew cask install arrayfire
 
-# XQUARTZ
-brew cask install xquartz
-
-# QEMU
-brew install --build-from-source qemu
+# OMP
+brew install libomp
 
 # WGET
-brew install --build-from-source wget
+brew install wget
 
 # FFMPEG
 brew install --build-from-source ffmpeg
 
 # YOUTUBE-DL
 brew install --build-from-source youtube-dl
-
-# PARI/GP
-brew install --build-from-source pari
 
 # CLEANUP
 brew update
@@ -90,7 +73,6 @@ brew update
 brew upgrade
 brew doctor
 brew cleanup
-
 
 # CLEAN HOME DIR
 cd $HOME

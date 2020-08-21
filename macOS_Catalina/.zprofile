@@ -1,19 +1,23 @@
 #PATH VARIABLES
-export PATH=/usr/local/anaconda3/bin:/usr/local/sbin:$PATH
+#export PATH=$PATH
 
 export LD_LIBRARY_PATH=/opt/arrayfire/lib:$LD_LIBRARY_PATH
+export DYLD_LIBRARY_PATH=/opt/arrayfire/lib:$DYLD_LIBRARY_PATH
 
 export EDITOR=subl
 
+export OMP_NUM_THREADS=8
+export JULIA_NUM_THREADS=8
+
 # Get on the uvm super computer
-alias vacc='ssh jpowers4@bluemoon-user1.uvm.edu'
+alias vacc='ssh jpowers4@vacc-user1.uvm.edu'
 
 proj() {
-  cd /Users/powers/Dropbox/Joshua/Github/$1
+  cd /Users/powers/Documents/Joshua/Projects/$1
 }
 
 ml() {
-  cd /Users/powers/Dropbox/Joshua/Learning/Udemy/MLCourse
+  cd /Users/powers/Documents/Learning/Udemy/MLCourse
   jupyter-notebook
 }
 

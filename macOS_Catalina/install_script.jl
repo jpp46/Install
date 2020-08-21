@@ -8,8 +8,7 @@ package_list = [
 	"PyCall", "IJulia", "Mux", "WebIO", "Interact", "Flux", "Zygote", "MacroTools", "Calculus", "StatsBase", "HypothesisTests",
 	"BlackBoxOptim", "BlackBoxOptimizationBenchmarking", "ProgressMeter", "DataStructures", "BSON", "ArrayFire", "Distributions",
 	"PackageCompiler", "AbstractPlotting", "GDAL", "MakieGallery", "RDatasets", "Makie", "Images", "ImageTransformations", "FileIO", "Colors", "GeometryTypes",
-	"LinearAlgebra", "DataFrames", "CSV", "Plots", "ORCA", "PlotlyJS", "PyPlot", "GraphRecipes", "StatsPlots", "LightGraphs",
-	"Cxx", "Libdl"
+	"LinearAlgebra", "DataFrames", "CSV", "Plots", "ORCA", "PlotlyJS", "PyPlot", "GraphRecipes", "StatsPlots", "LightGraphs", "ColorSchemes", "Formatting"
 ]
 
 for package in package_list
