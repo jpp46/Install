@@ -52,11 +52,11 @@ npm install uglify-js --global
 # ARRAYFIRE
 brew cask install arrayfire
 
-# OMP
-brew install libomp
-
 # WGET
 brew install wget
+
+# OMP
+brew install --build-from-source libomp
 
 # FFMPEG
 brew install --build-from-source ffmpeg

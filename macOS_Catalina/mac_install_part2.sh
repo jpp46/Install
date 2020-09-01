@@ -7,19 +7,19 @@ brew cask install anaconda
 julia $HOME/Install/macOS_Catalina/install_script.jl
 
 # PYROSIM
-mkdir $HOME/.source-build
-cd $HOME/.source-build
-git clone https://github.com/ccappelle/pyrosim.git
-cd pyrosim
-sh build.sh
-pip install -e .
+# mkdir $HOME/.source-build
+# cd $HOME/.source-build
+# git clone https://github.com/ccappelle/pyrosim.git
+# cd pyrosim
+# sh build.sh
+# pip install -e .
 
 # COCO BENCHMARKING
-cd $HOME/.source-build
-git clone https://github.com/numbbo/coco.git
-cd coco
-python do.py run-python
-python do.py install-postprocessing
+# cd $HOME/.source-build
+# git clone https://github.com/numbbo/coco.git
+# cd coco
+# python do.py run-python
+# python do.py install-postprocessing
 
 # SUPER COMPUTER ACCESS
 ssh-keygen
