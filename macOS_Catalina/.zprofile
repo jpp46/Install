@@ -46,3 +46,9 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 makedrive() {
   sudo "/Applications/Install macOS Catalina.app/Contents/Resources/createinstallmedia" --volume /Volumes/$1
 }
+
+# Compress
+# tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
+
+# Extract
+# tar -zxvf yourfile.tar.gz
