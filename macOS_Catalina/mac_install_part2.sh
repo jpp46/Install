@@ -1,25 +1,23 @@
 #!/bin/sh
 
-# ANACONDA PYTHON
-brew cask install anaconda
-
-# JULIA PACKAGES
+# JULIA & PYTHON PACKAGES
 julia $HOME/Install/macOS_Catalina/install_script.jl
+julia $HOME/Install/macOS_Catalina/install_script.sh
 
 # PYROSIM
-# mkdir $HOME/.source-build
-# cd $HOME/.source-build
-# git clone https://github.com/ccappelle/pyrosim.git
-# cd pyrosim
-# sh build.sh
-# pip install -e .
+mkdir $HOME/.source-build
+cd $HOME/.source-build
+git clone https://github.com/ccappelle/pyrosim.git
+cd pyrosim
+sh build.sh
+pip install -e .
 
 # COCO BENCHMARKING
-# cd $HOME/.source-build
-# git clone https://github.com/numbbo/coco.git
-# cd coco
-# python do.py run-python
-# python do.py install-postprocessing
+cd $HOME/.source-build
+git clone https://github.com/numbbo/coco.git
+cd coco
+python do.py run-python
+python do.py install-postprocessing
 
 # SUPER COMPUTER ACCESS
 ssh-keygen
@@ -35,10 +33,10 @@ rm -rf Install
 
 # EXTRA INFO
   # SLACK HANDLES
-    # mecl-uvm elmlang rust-lang julialang cpplang wesbos
+    # mecl-uvm julialang cpplang elmlang wesbos
 
   # DISCORD HANDLES
-    # rustsim handmade.network
+    # handmade.network
 
   # APPS TO INSTALL
-    # Pages Keynote Numbers SnippetsLab OmniPlayerPro
+    # Pages Keynote Numbers SnippetsLab

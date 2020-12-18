@@ -1,8 +1,4 @@
-#PATH VARIABLES
-#export PATH=$PATH
-
-export LD_LIBRARY_PATH=/opt/arrayfire/lib:$LD_LIBRARY_PATH
-export DYLD_LIBRARY_PATH=/opt/arrayfire/lib:$DYLD_LIBRARY_PATH
+export PATH=/Users/powers/.julia/conda/3/bin:$PATH
 
 export EDITOR=subl
 
@@ -11,6 +7,13 @@ export JULIA_NUM_THREADS=8
 
 # Get on the uvm super computer
 alias vacc='ssh jpowers4@vacc-user1.uvm.edu'
+alias deepg='ssh jpowers4@dg-user1.uvm.edu'
+
+voxcraft() {
+	cwd=$(pwd)
+	cd /Users/powers/.source-build/voxcraft-viz/build/
+	./voxcraft-viz
+}
 
 proj() {
   cd /Users/powers/Documents/Joshua/Projects/$1
@@ -33,7 +36,7 @@ findAll() {
 }
 
 killAll() {
-  kill $(ps aux | grep $1 | grep -v grep | awk '{print $2}')
+  killall -9 $1
 }
 
 # Show hidden files in finder
@@ -46,9 +49,3 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 makedrive() {
   sudo "/Applications/Install macOS Catalina.app/Contents/Resources/createinstallmedia" --volume /Volumes/$1
 }
-
-# Compress
-# tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
-
-# Extract
-# tar -zxvf yourfile.tar.gz

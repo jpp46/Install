@@ -32,13 +32,10 @@ brew cask install discord
 brew cask install screenflow
 
 # OPEN BROADCAST SOFTEWARE
-brew cask install obs
+# brew cask install obs
 
 # Make MKV
-brew cask install makemkv
-
-# JULIA
-brew cask install julia
+# brew cask install makemkv
 
 # FORTH
 brew install gforth
@@ -49,20 +46,14 @@ brew install elm-format
 brew install node
 npm install uglify-js --global
 
-# ARRAYFIRE
-brew cask install arrayfire
-
 # WGET
 brew install wget
 
-# OMP
-brew install --build-from-source libomp
-
 # FFMPEG
-brew install --build-from-source ffmpeg
+brew install ffmpeg
 
 # YOUTUBE-DL
-brew install --build-from-source youtube-dl
+brew install youtube-dl
 
 # CLEANUP
 brew update
@@ -79,6 +70,22 @@ cd $HOME
 sudo rm -rf .*
 mkdir .source-build
 
+# JULIA
+cd $HOME/install
+MAJOR_RELEASE=1
+MINOR_RELEASE=5
+MAINTENANCE_RELEASE=3
+MM=$MAJOR_RELEASE.$MINOR_RELEASE
+MMM=$MAJOR_RELEASE.$MINOR_RELEASE.$MAINTENANCE_RELEASE
+curl https://julialang-s3.julialang.org/bin/mac/x64/$MM/julia-$MMM-mac64.dmg -o julia.dmg
+sudo hdiutil attach julia.dmg
+cd /Volumes/julia-$MMM
+sudo cp -rf julia-$MM.app /Applications
+cd $HOME/install
+sudo hdiutil detach /Volumes/julia-$MMM
+ln -s /Applications/julia-$MM.app/Contents/Resources/julia/bin/julia /usr/local/bin
+
 # FINAL PROFILE
-cd Install/macOS_Catalina
+cd $HOME/Install/macOS_Catalina
 cp .zprofile $HOME
+cp Forth.sublime-syntax /Users/powers/Library/Application Support/Sublime Text 3/Packages/User/

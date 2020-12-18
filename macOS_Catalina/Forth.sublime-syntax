@@ -1,0 +1,86 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: Forth
+file_extensions: [forth, fth, 4th]
+scope: source.forth
+
+contexts:
+
+  main:
+    # The main context is the initial starting point of our syntax.
+    # Include other contexts from here (or specify them directly).
+    - include: keywords
+    - include: numbers
+    - include: strings
+    - include: functions
+    - include: variables
+    - include: constants
+    - include: comments
+
+  keywords:
+    # Keywords are if, else for and while.
+    # Note that blackslashes don't need to be escaped within single quoted
+    # strings in YAML. When using single quoted strings, only single quotes
+    # need to be escaped: this is done by using two single quotes next to each
+    # other.
+    - match: '\b(if|else|then|do|loop|case|endcase|of|endof)\b'
+      scope: keyword.control.forth
+
+  numbers:
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.forth
+
+  strings:
+    # Strings begin with a dot quote and end with a quote
+    - match: '."'
+      scope: punctuation.definition.string.begin.forth
+      push: inside_string
+
+  inside_string:
+    - meta_include_prototype: false
+    - meta_scope: string.quoted.double.forth
+    - match: '"'
+      scope: punctuation.definition.string.end.forth
+      pop: true
+
+  functions:
+    - match: ':'
+      scope: keyword.other.forth
+      set: function_name
+
+  function_name:
+    - match: '\b[A-Za-z_0-9]*\b'
+      scope: entity.name.function.forth
+      pop: true
+
+  variables:
+    - match: '\b(variable)\b'
+      scope: keyword.other.forth
+      push: 
+        - match: '\b[A-Za-z_0-9\-]+\b'
+          scope: variable.language.forth
+          pop: true
+
+  constants:
+    - match: '\b(constant)\b'
+      scope: keyword.other.forth
+      push: 
+        - match: '\b[A-Za-z_0-9\-]+\b'
+          scope: entity.name.constant.forth
+          pop: true
+
+  comments:
+    # Comments begin with a '(' and end with a ')'
+    - match: '\('
+      scope: punctuation.definition.comment.parenthesis.forth
+      push:
+        - meta_scope: comment.block.parenthesis.forth
+        - match: '\)'
+          pop: true
+    - match: '\\'
+      scope: punctuation.definition.comment.forward-slash.forth
+      push:
+        - meta_scope: comment.line.forward-slash.forth
+        - match: $
+          pop: true

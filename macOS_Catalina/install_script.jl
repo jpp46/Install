@@ -1,23 +1,12 @@
 using Pkg
 Pkg.update()
 
-ENV["PYTHON"]="/usr/local/anaconda3/bin/python"
-ENV["JUPYTER"]="/usr/local/anaconda3/bin/jupyter"
-
 package_list = [
-	"PyCall", "IJulia", "Mux", "WebIO", "Interact", "Flux", "Zygote", "MacroTools", "Calculus", "StatsBase", "HypothesisTests",
-	"BlackBoxOptim", "BlackBoxOptimizationBenchmarking", "ProgressMeter", "DataStructures", "BSON", "ArrayFire", "Distributions",
-	"PackageCompiler", "AbstractPlotting", "GDAL", "MakieGallery", "RDatasets", "Makie", "Images", "ImageTransformations", "FileIO", "Colors", "GeometryTypes",
-	"LinearAlgebra", "DataFrames", "CSV", "Plots", "ORCA", "PlotlyJS", "PyPlot", "GraphRecipes", "StatsPlots", "LightGraphs", "ColorSchemes", "Formatting"
+"PyCall", "IJulia", "Flux", "Calculus", "StatsBase", "HypothesisTests", "DelimitedFiles", "BlackBoxOptim", "BlackBoxOptimizationBenchmarking", "ProgressMeter", "DataStructures", "BSON", "Distributions", "Makie", "Images", "ImageTransformations", "FileIO", "Colors", "GeometryTypes", "LinearAlgebra", "DataFrames", "CSV", "Plots", "GraphRecipes", "StatsPlots", "LightGraphs", "ColorSchemes", "Formatting", "Combinatorics", "Distributions", "Distributed"
 ]
 
 for package in package_list
-    if ! in(package,keys(Pkg.installed())) Pkg.add(package) end
+    Pkg.add(package)
 end
 
-Pkg.build("PyCall")
-Pkg.build("IJulia")
 Pkg.update()
-
-using WebIO
-WebIO.install_jupyter_nbextension()
