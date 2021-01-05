@@ -13,7 +13,7 @@ brew doctor
 # SUBLIME
 brew install --cask sublime-text
 # After install packages:
-# Rust Enhanced, rustFmt, Julia Enhanced, Elm syntax and Format, Clang Format, Ayu, TabNine
+#  Julia Enhanced, Elm syntax and Format, Clang Format, Ayu, TabNine
 
 # CLANG FORMAT
 brew install clang-format
