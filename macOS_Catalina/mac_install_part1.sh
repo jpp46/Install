@@ -28,7 +28,7 @@ brew install --cask screenflow
 # brew cask install makemkv
 
 # FORTH
-brew install -s gforth
+brew install gforth
 
 # ELM
 brew install elm
