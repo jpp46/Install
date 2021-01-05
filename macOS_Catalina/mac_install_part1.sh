@@ -22,12 +22,6 @@ brew cask install sublime-text
 # CLANG FORMAT
 brew install clang-format
 
-# SLACK
-brew cask install slack
-
-# DISCORD
-brew cask install discord
-
 # SCREEN FLOW
 brew cask install screenflow
 
@@ -38,7 +32,7 @@ brew cask install screenflow
 # brew cask install makemkv
 
 # FORTH
-brew install gforth
+brew install -s gforth
 
 # ELM
 brew install elm
@@ -50,10 +44,10 @@ npm install uglify-js --global
 brew install wget
 
 # FFMPEG
-brew install ffmpeg
+brew install -s ffmpeg
 
 # YOUTUBE-DL
-brew install youtube-dl
+brew install -s youtube-dl
 
 # CLEANUP
 brew update
