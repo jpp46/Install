@@ -10,10 +10,6 @@ sudo rm -rf $HOME/.*
 brew update
 brew doctor
 
-# FIRA CODE FONTS
-brew tap homebrew/cask-fonts
-brew install --cask font-fira-code
-
 # SUBLIME
 brew install --cask sublime-text
 # After install packages:
