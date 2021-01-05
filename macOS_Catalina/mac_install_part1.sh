@@ -12,10 +12,10 @@ brew doctor
 
 # FIRA CODE FONTS
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 # SUBLIME
-brew cask install sublime-text
+brew install --cask sublime-text
 # After install packages:
 # Rust Enhanced, rustFmt, Julia Enhanced, Elm syntax and Format, Clang Format, Ayu, TabNine
 
@@ -23,7 +23,7 @@ brew cask install sublime-text
 brew install clang-format
 
 # SCREEN FLOW
-brew cask install screenflow
+brew install --cask screenflow
 
 # OPEN BROADCAST SOFTEWARE
 # brew cask install obs
