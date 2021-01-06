@@ -2,7 +2,7 @@
 
 # JULIA & PYTHON PACKAGES
 julia $HOME/Install/macOS_Catalina/install_script.jl
-julia $HOME/Install/macOS_Catalina/install_script.sh
+sh $HOME/Install/macOS_Catalina/install_script.sh
 
 # PYROSIM
 mkdir $HOME/.source-build
