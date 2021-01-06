@@ -61,7 +61,7 @@ sudo rm -rf .*
 mkdir .source-build
 
 # JULIA
-cd $HOME/install
+cd $HOME/Install
 MAJOR_RELEASE=1
 MINOR_RELEASE=5
 MAINTENANCE_RELEASE=3
@@ -71,7 +71,7 @@ curl https://julialang-s3.julialang.org/bin/mac/x64/$MM/julia-$MMM-mac64.dmg -o 
 sudo hdiutil attach julia.dmg
 cd /Volumes/julia-$MMM
 sudo cp -rf julia-$MM.app /Applications
-cd $HOME/install
+cd $HOME/Install
 sudo hdiutil detach /Volumes/julia-$MMM
 ln -s /Applications/julia-$MM.app/Contents/Resources/julia/bin/julia /usr/local/bin
 
